@@ -12,7 +12,7 @@ export default function App() {
   function addGoalHandler() {
     setCourseGoals(currentCourseGoals => [
       ...currentCourseGoals, 
-      enteredGoalText,
+      {text: enteredGoalText, key: Math.random().toLocaleString()}
     ])
   }
 
